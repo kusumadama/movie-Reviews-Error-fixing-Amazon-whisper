@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Added lang attribute -->
+<html lang="en">
 
 <head>
   <title>Movie Review Site</title>
@@ -8,6 +8,7 @@
     :root {
       --bg-color: #333;
       --text-color: #fff;
+      --link-color: #00aaff; /* New link color */
     }
 
     body {
@@ -20,6 +21,10 @@
     nav {
       background-color: var(--bg-color);
       color: var(--text-color);
+    }
+
+    nav a {
+      color: var(--link-color); /* Set link color */
     }
 
     /* Responsive Layout */
@@ -41,8 +46,8 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Upcoming</a></li>
+        <li><a href="#" style="color: var(--link-color);">Reviews</a></li> <!-- Set link color -->
+        <li><a href="#" style="color: var(--link-color);">Upcoming</a></li> <!-- Set link color -->
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -57,7 +62,6 @@
     <section class="hero">
       <h1>Latest Reviews</h1>
       <div class="search">
-        <!-- Added label for the input field -->
         <label for="search-input">Search:</label>
         <input type="text" id="search-input">
         <button>Search</button>
@@ -101,4 +105,5 @@
   </script>
 
 </body>
+
 </html>
